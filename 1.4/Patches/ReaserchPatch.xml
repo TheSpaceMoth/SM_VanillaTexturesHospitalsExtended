@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation  Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]/randomGraphics</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]/randomGraphics</xpath>
+			<value>
+				<li>Things/Building/Research/ResearchBenchHiTech</li>
+			</value>
+		</match>
+	</Operation >
+	
+	<Operation  Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "MultiAnalyzer"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]/randomGraphics</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "MultiAnalyzer"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]/randomGraphics</xpath>
+			<value>
+				<li>Things/Building/Research/MultiAnalyzer</li>
+			</value>
+		</match>
+	</Operation >
+	
+	<Operation  Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "CommsConsole"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]/randomGraphics</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "CommsConsole"]/comps/li[@Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic"]/randomGraphics</xpath>
+			<value>
+				<li>Things/Building/Research/Comms</li>
+			</value>
+		</match>
+	</Operation >
+	
+	<Operation  Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/minifiedDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/minifiedDef</xpath>
+			<value>
+				<minifiedDef>MinifiedThing</minifiedDef>
+			</value>
+		</match>
+	</Operation >
+
+	<Operation  Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/thingCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsMisc</li>
+				</thingCategories>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/thingCategories</xpath>
+			<value>
+				<thingCategories>
+					<li>BuildingsMisc</li>
+				</thingCategories>
+			</value>
+		</match>
+	</Operation >
+	
+	<Operation  Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/statBases/Mass</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/statBases</xpath>
+			<value>
+				<Mass>75</Mass>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/statBases/Mass</xpath>
+			<value>
+				<Mass>75</Mass>
+			</value>			
+		</match>
+	</Operation >
+	
+</Patch>

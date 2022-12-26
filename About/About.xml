@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+  <name>Textures Varients for Hosptials Expanded</name>
+  <author>SpaceMoth</author>
+  <url></url>
+  <packageId>Spacemoth.VTE4HE</packageId>
+  <description>Minor tweak to add the Hospitals Expanded new High-tech reaserch bench and Multi-analyser texture to the list of possible varients added by Vanilla Textures Expanded Variations mod. 
+Also allows the High-tech reaserch bench to be uninstalled!
+</description>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>zymex.HospitalsExtended</packageId>
+            <displayName>Hospitals Extended</displayName>
+            <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2121326566</downloadUrl>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2121326566</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>VanillaExpanded.VTEXVariations</packageId>
+            <displayName>Vanilla Textures Expanded - Variations</displayName>
+            <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2493234474</downloadUrl>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2493234474</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>zymex.HospitalsExtended</li>
+        <li>VanillaExpanded.VTEXVariations</li>
+    </loadAfter>
+</ModMetaData>
